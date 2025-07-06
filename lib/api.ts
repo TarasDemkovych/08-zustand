@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { Note } from "@/types/note";
+import type { Note, Tag } from "@/types/note";
 
 const API_KEY = process.env.NEXT_PUBLIC_NOTEHUB_TOKEN;
 axios.defaults.baseURL = "https://notehub-public.goit.study/api/notes";
@@ -15,7 +15,7 @@ interface FetchNotesParams {
   search?: string;
   page?: number;
   perPage?: number;
-  tag?: string;
+  tag?: Tag;
 }
 
 export interface CreateNoteParams {
