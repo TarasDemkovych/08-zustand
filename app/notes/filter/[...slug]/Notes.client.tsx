@@ -15,7 +15,7 @@ import { Tag } from "@/types/note";
 
 interface NotesClientProps {
   initialData?: FetchNotesHTTPResponse;
-  tag: Tag;
+  tag?: Tag;
 }
 
 export default function NotesClient({ initialData, tag }: NotesClientProps) {
