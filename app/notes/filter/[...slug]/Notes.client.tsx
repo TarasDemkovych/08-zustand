@@ -11,10 +11,11 @@ import Loader from "@/components/Loader/Loader";
 import ErrorMessage from "@/components/ErrorMessage/ErrorMessage";
 import Pagination from "@/components//Pagination/Pagination";
 import Link from "next/link";
+import { Tag } from "@/types/note";
 
 interface NotesClientProps {
   initialData?: FetchNotesHTTPResponse;
-  tag?: string;
+  tag: Tag;
 }
 
 export default function NotesClient({ initialData, tag }: NotesClientProps) {
